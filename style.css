@@ -1,0 +1,48 @@
+@font-face {
+    font-family: theFont;
+    src: url(rsrc/GraphikRegular.otf);
+  }
+  
+body {
+    font-family: theFont;
+    background-color: gainsboro;
+    color: orangered;
+}
+  
+
+.first { grid-area: first;}
+.second { grid-area: second; }
+.third { grid-area: third; }
+.fourth { grid-area: fourth; }
+.fifth { grid-area: fifth; }
+.sixth { grid-area: sixth; }
+.seventh { grid-area: seventh; }
+.eighth { grid-area: eighth; }
+.ninth { grid-area: ninth; }
+  
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "first second third"
+        "fourth fifth sixth"
+        "seventh eighth ninth";
+      
+}
+  
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gainsboro;
+}
+  
+.box {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: #456180;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 299px;
+}
